@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+h1{
+  color: crimson;
+  font-size: 3vw;
+  font-weight: bold;
+  height: 17px;
+  width: 100%;
+  margin: 20px;
+
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+   
+}
+#nav{
+    width: 100%;
+    height:80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    background-color: green;
+   
+}
+
+#nav img{
+    color: red;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+marquee{
+    color: white;
+    background-color: black;  
+}
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 100px;
+    border: underline solid black;
+    font-size: 17px;
+  }
+  
+ 
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #1b0404;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #52a2a7;
+  color: solid black;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15%;
+}
+
+
+button:hover {
+  opacity: 0.8;
+  background-color:  rgb(23, 195, 158);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+}
+#nav-part2 a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+#nav-part2 a:hover{
+    background-color:  rgb(188, 137, 186);
+    border-radius: 30%;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left h3{
+    text-align:start;
+    color: rgb(40, 167, 176);
+    padding: 80px 30px;
+}
+#left h3 span{
+    color: rgb(167, 167, 234) ;
+
+ } 
+#right img{
+   padding: 40px;
+   
+} 
+
+#right{
+    width: 85vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 20px solid #dfebf9;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px 20px rgba(36, 115, 152, 0.3);
+}
+#wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slide 5s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+#main-2{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#location{
+  border: #f44336;
+  border-radius: 50%;
+  background-color: yellow;
+  height: 250px;
+  width: 250px;
+  /* margin: 80px; */
+
+}
